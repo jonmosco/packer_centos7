@@ -1,7 +1,6 @@
 #!/bin/sh
 #
 # Install VMware tools from the vmware tools repo
-# /etc/yum.repos.d/vmware-tools.repo
 
 REPO=`cat <<-END
 [vmware-tools]
@@ -16,7 +15,9 @@ END
 echo "$REPO" >> /etc/yum.repos.d/vmware-tools.repo
 
 yum clean all
+
 # reload yum.repos.d
 yum check-update
-# install the package
+
+# install the vmware tools
 yum install open-vm-tools -y

@@ -10,7 +10,6 @@
     "iso_checksum_type": "md5",
     "ssh_username": "vagrant",
     "ssh_password": "vagrant",
-    "tools_upload_flavor": "linux",
     "vm_name": "packer-centos-7",
     "shutdown_command": "/usr/bin/sudo /sbin/shutdown -P now",
     "boot_command": [
@@ -26,7 +25,6 @@
     "scripts": [
       "scripts/vmwaretools.sh",
       "scripts/vagrant.sh",
-      "scripts/network.sh"
     ]
   }
   ],
