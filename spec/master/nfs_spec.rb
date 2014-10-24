@@ -2,6 +2,8 @@
 #
 require 'spec_helper'
 
+set :os, :family => 'redhat', :release => '7', :arch => 'x86_64'
+
 describe service('nfs-server') do
   it { should be_enabled }
   it { should be_running }
